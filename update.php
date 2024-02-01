@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update</title>
 </head>
+
 <body>
-<?php
+    <?php
     include('conn.php');
     error_reporting(0);
     if (isset($_POST['edit_btn'])) {
@@ -20,7 +22,7 @@
         if (mysqli_num_rows($runn) > 0) {
             while ($row = mysqli_fetch_assoc($runn)) {
 
-    ?>
+                ?>
                 <form action="edit.php" method="post">
                     <table>
                         <tr>
@@ -40,7 +42,8 @@
                             <td colspan="2"><input type="email" name="e_email" id="email" value="<?php echo $row['email'] ?>"></td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="text" name="e_number" id="number" value="<?php echo $row['contact'] ?>"></td>
+                            <td colspan="2"><input type="text" name="e_number" id="number" value="<?php echo $row['contact'] ?>">
+                            </td>
                         </tr>
 
                         <tr>
@@ -51,10 +54,11 @@
                         </tr>
                     </table>
                 </form>
-    <?php
+                <?php
             }
         }
     }
     ?>
 </body>
+
 </html>
