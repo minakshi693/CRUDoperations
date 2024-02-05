@@ -83,7 +83,11 @@
         }
         ?>
     </table>
-
+    <script>
+            function checkdelet(){
+                return confirm('Are You Sure?');
+            }
+            </script>
 </body>
 
 </html>

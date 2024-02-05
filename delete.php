@@ -17,7 +17,7 @@
 
   if ($query_run) {
     echo "Your Record Has Been Deleted";
-    header("location:viewport.php");
+    header("location:view.php");
     ?>
     <!-- // <meta http-equiv="refresh" content="0; url=http://localhost/mini/table.php"> -->
 

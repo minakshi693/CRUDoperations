@@ -12,7 +12,7 @@ if (isset($_POST['update'])) {
 
     if ($runn) {
         $_SESSION['success'] = "entered";
-        header('Location:viewport.php');
+        header('Location:view.php');
     } else {
         echo "fail to enter data";
     }

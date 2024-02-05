@@ -50,7 +50,7 @@
                             <td>
                                 <button type="submit" name="update">Update</button>
                             </td>
-                            <td><a href="viewport.php">Cancel</a></td>
+                            <td><a href="view.php">Cancel</a></td>
                         </tr>
                     </table>
                 </form>
