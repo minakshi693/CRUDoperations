@@ -87,8 +87,6 @@
             <th>Company</th>
             <th>City</th>
             <th>Requirement</th>
-
-            <th>Update</th>
         </tr>
 
         <?php
@@ -122,15 +120,8 @@
                     <td>
                         <?php echo $row["msg"]; ?>
                     </td>
-                    <input type="hidden" name="del_id" class="del_id">
-                    <td>
-                        <form action="update.php" method="post">
-                            <input type="hidden" value="<?php echo $row['id'] ?>" name="edit_ids">
-                            <button type="submit" name="edit_btn">Edit</button>
-                        </form>
-                        <?php echo "<button class='del_btn'><a href='delete.php? i=$row[id]' onclick='return checkdelet()'>Delete</a></button"; ?>
-                    </td>
-                </tr>
+                    
+                        
                 <?php
             }
         } else {
@@ -138,11 +129,7 @@
         }
         ?>
     </table>
-    <script>
-        function checkdelet() {
-            return confirm('Are You Sure?');
-        }
-    </script>
+    
 </body>
 
 </html>

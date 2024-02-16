@@ -7,7 +7,11 @@ if (isset($_POST['update'])) {
     $name = $_POST['e_name'];
     $email = $_POST['e_email'];
     $number = $_POST['e_number'];
-    $upd = "UPDATE contact SET namee = '$name', email= '$email', contact='$number' WHERE id='$id'";
+    $company = $_POST['e_company'];
+    $city = $_POST['e_city'];
+    $msg = $_POST['e_msg'];
+
+    $upd = "UPDATE contact SET namee = '$name', email= '$email', contact='$number', company='$company',city='$city',msg='$msg' WHERE id='$id'";
     $runn = mysqli_query($conn, $upd);
 
     if ($runn) {
